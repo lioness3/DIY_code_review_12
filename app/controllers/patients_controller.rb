@@ -1,7 +1,7 @@
-class PatientsController < ApplicationController
+class ResidentsController < ApplicationController
 
   def index
-    @patients = {"name": "Joe Shmo", "age": 44, "room
+    @residents = {"name": "Joe Shmo", "age": 44, "room
       -number": 233, "fall_risk": true}
     json_response(@patients)
   end
