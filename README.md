@@ -20,17 +20,10 @@
 
 
 #  _Specifications_
-* any person can view products
-* Only user with admin boolean may have CRUD functionality with products and reviews.
-* ^Except: A user with an account may add reviews.
+
 ******************
 #### _Instructions_
-* open project
-* bundle Gemfile
-* run 'rake db:migrate' in root directory of project in the terminal
-* run 'rails s' in terminal
-* open 'localhost:3000' in your browser
-* Verify all necessary steps by cloning your application from Github and then documenting your application's setup instructions yourself.
+
 ***************
 #### _Known Bugs_
 
@@ -41,14 +34,12 @@
 * BCRYPT
 * Pry
 * RSPEC
-* Google Fonts
 * Postgres
 * PSQL
 * Rake
 * Sinatra
 * Capybara
-* CSS
-* Bootstrap
+
 
 *******
 ###### _Licensing_
