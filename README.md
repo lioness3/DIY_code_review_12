@@ -1,24 +1,55 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# _Code Review 12_
+## _Building an API_
+#### _An API for residents in a nursing home_
+****************
+## _January 17, 2019_
+****************
+#### _By: Joann Carter_
+***************
+# _Instructions for Code Review Assignment_
+* Endpoints for GET (all and by id), POST, PUT and DELETE.
+* A RANDOM endpoint that randomly returns a park/business/animal.
+* A second custom endpoint that accepts parameters (example: a SEARCH route that allows users to search by specific park names).
+* Model scopes to process parameters from API calls.
+* At least one of the objectives from Monday's Further Exploration lesson (such as versioning, token authentication, or serialization).
+* Thorough exception handling.
+* Complete testing with request specs.
+* Randomized data with Faker or your own custom seed code.
+* A README that thoroughly documents all endpoints, including parameters that can be passed in.
 
-Things you may want to cover:
 
-* Ruby version
+#  _Specifications_
+* any person can view products
+* Only user with admin boolean may have CRUD functionality with products and reviews.
+* ^Except: A user with an account may add reviews.
+******************
+#### _Instructions_
+* open project
+* bundle Gemfile
+* run 'rake db:migrate' in root directory of project in the terminal
+* run 'rails s' in terminal
+* open 'localhost:3000' in your browser
+* Verify all necessary steps by cloning your application from Github and then documenting your application's setup instructions yourself.
+***************
+#### _Known Bugs_
 
-* System dependencies
+***************
+# _Technology Used_
+* Ruby
+* Rails
+* BCRYPT
+* Pry
+* RSPEC
+* Google Fonts
+* Postgres
+* PSQL
+* Rake
+* Sinatra
+* Capybara
+* CSS
+* Bootstrap
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*******
+###### _Licensing_
+MIT public
