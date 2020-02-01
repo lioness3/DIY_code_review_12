@@ -14,7 +14,7 @@ class ResidentsController < ApplicationController
   end
 
   def create
-    @resident = Resident.create(resident_params)
+    @resident = Resident.create!(resident_params)
     json_response(@resident)
   end
 

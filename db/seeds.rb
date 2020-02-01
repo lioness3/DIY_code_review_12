@@ -10,10 +10,10 @@ class Seed
       resident = Resident.create!(
         name: Faker::Name.unique.name ,
         room_number: Faker::Number.unique.within(range: 10..50),
-        age: Faker::Number.within(range: 60..100)
+        age: Faker::Number.within(range: 60..100),
         fall_risk: Faker::Boolean.boolean
       )
-      puts "Resident #{i}: #{resident.name}, age #{resident.age}, is located in room #{resident.room_number}. mobile stability = #{resident.fall_risk}."
+      puts "Resident #{i + 1}: #{resident.name}, age #{resident.age}, is located in room #{resident.room_number}. mobile stability = #{resident.fall_risk}."
     end
   end
 end
