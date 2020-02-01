@@ -5,9 +5,6 @@ class ResidentsController < ApplicationController
     json_response(@residents)
   end
 
-
-
-
   def show
     @resident = Resident.find(params[:id])
     json_response(@resident)
@@ -20,7 +17,10 @@ class ResidentsController < ApplicationController
 
   def update
     @resident = Resident.find(params[:id])
-    @resident.update(resident_params)
+    if @resident.update!(resident_params)
+      render status: 200, json: {
+        meesage: 'Resident information was successfully edited.'
+      }
   end
 
   def destroy
