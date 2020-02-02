@@ -2,6 +2,10 @@ class ResidentsController < ApplicationController
 
   def index
     @residents = Resident.all
+    name = params[:name]
+     if @residents.search(name)
+       render status: 200, json: @residents
+     end
     json_response(@residents)
   end
 

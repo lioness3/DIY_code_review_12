@@ -7,8 +7,8 @@ describe "PUT #update", :type => :request do
    it 'should update resident info' do
 
 
-     patch :update, params: {  name: 'Awesome resident'}
-     resident.update
+     put :update, params: {  name: 'Awesome resident' }
+  
 expect(JSON.parse(response.body)['name']).to eq('Awesome resident')
     end
    end
