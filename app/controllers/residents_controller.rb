@@ -12,20 +12,25 @@ class ResidentsController < ApplicationController
 
   def create
     @resident = Resident.create!(resident_params)
-    json_response(@resident)
+    json_response(@resident, :created)
   end
 
   def update
     @resident = Resident.find(params[:id])
     if @resident.update!(resident_params)
       render status: 200, json: {
-        meesage: 'Resident information was successfully edited.'
+        message: 'Resident information was successfully edited.'
       }
+    end
   end
 
   def destroy
     @resident = Resident.find(params[:id])
-    @resident.destroy
+    if @resident.destroy
+      render status: 200, json: {
+        message: 'Resident has been deleted.'
+      }
+    end
   end
 
   private
