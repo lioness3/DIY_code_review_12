@@ -37,8 +37,7 @@
 * Postgres
 * PSQL
 * Rake
-* Sinatra
-* Capybara
+* Faker
 
 
 *******
