@@ -23,7 +23,14 @@
 
 ******************
 #### _Instructions_
-
+* open directory in terminal
+* run 'bundle install'
+* run 'rake db:create'
+* run 'rake db:migrate'
+* run 'rake db:seed'
+* run 'rails s'
+* open localhost:3000 in browser
+* open postman
 ***************
 #### _Known Bugs_
 
