@@ -17,9 +17,9 @@ class ResidentsController < ApplicationController
   def create
     @resident = Resident.create!(resident_params)
     if @resident.save
-      render json: {status: 'SUCCESS', message: 'Resident is now in the system.' data: @resident}, status: :ok
+      render json: {status: 'SUCCESS', message: 'Resident is now in the system.', data: @resident}, status: :ok
     else
-      render json: {status: 'ERROR', message: 'Resident WAS NOT SAVED!' }
+      render json: {status: 'ERROR', message: 'Resident WAS NOT SAVED!'}
     end
     json_response(@resident, :created)
   end
