@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::API
   include Response
 
-  include ActionController::HttpAuthentication::Token::ControllerMethods
-  before_action :authenticate
+  # include ActionController::HttpAuthentication::Token::ControllerMethods
+  # before_action :authenticate
 
   rescue_from ActiveRecord::RecordNotFound do |exception|
     json_response({ message: exception.message }, :not_found)
