@@ -32,10 +32,13 @@
 * open postman
 ***************
 #  _End Points_
+* View all residents by: get localhost:3000/residents
+* View a single resident by: get localhost:3000/residents/#{resident.id}
+* Delete a single resident by: 'delete' localhost:3000/residents/#{resident.id}
 
 ***************
 #### _Known Bugs_
-
+* user authentication isn't working due to unknown API key
 ***************
 # _Technology Used_
 * Ruby
