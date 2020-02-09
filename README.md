@@ -33,13 +33,16 @@ This app will create an API for residents in an elderly community. This app can 
 * open postman
 ***************
 #  _End Points_
-* View all residents by: get localhost:3000/residents
+### _view endpoints on Postman_
+* View all residents by: 'get' localhost:3000/residents
 * View a single resident by: get localhost:3000/residents/#{resident.id}
+* create a new resident by: 'post' localhost:3000/residents and entering key's: name, room_number, and age with corresponding and values on Postman
 * Delete a single resident by: 'delete' localhost:3000/residents/#{resident.id}
+* edit a single resident by: 'put' localhost:3000/residents/#{resident.id} and passing in the information for the key and value on Postman
 
 ***************
 #### _Known Bugs_
-* user authentication isn't working due to unknown API key
+* User authentication isn't working due to unknown API key
 ***************
 # _Technology Used_
 * Ruby
