@@ -7,6 +7,9 @@
 ****************
 #### _By: Joann Carter_
 ***************
+#### _Description_
+This app will create an API for residents in an elderly community. This app can be used on postman. There are no views for this app.
+***************
 # _Instructions for Code Review Assignment_
 * Endpoints for GET (all and by id), POST, PUT and DELETE.
 * A RANDOM endpoint that randomly returns a park/business/animal.
@@ -17,8 +20,6 @@
 * Complete testing with request specs.
 * Randomized data with Faker or your own custom seed code.
 * A README that thoroughly documents all endpoints, including parameters that can be passed in.
-
-
 
 ******************
 #### _Instructions_
@@ -42,16 +43,13 @@
 ***************
 # _Technology Used_
 * Ruby
-* Rails
+* Rails- API
 * BCRYPT
 * Pry
 * RSPEC
-* Postgres
-* PSQL
+* Postman
 * Rake
 * Faker
-
-
 *******
 ###### _Licensing_
 MIT public
