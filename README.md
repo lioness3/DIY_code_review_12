@@ -19,7 +19,6 @@
 * A README that thoroughly documents all endpoints, including parameters that can be passed in.
 
 
-#  _Specifications_
 
 ******************
 #### _Instructions_
@@ -31,6 +30,9 @@
 * run 'rails s'
 * open localhost:3000 in browser
 * open postman
+***************
+#  _End Points_
+
 ***************
 #### _Known Bugs_
 
